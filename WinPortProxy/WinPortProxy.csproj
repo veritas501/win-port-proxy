@@ -226,6 +226,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleApis.cs" />
+    <Compile Include="ElevateHelper.cs" />
     <Compile Include="ExecResult.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -23,6 +23,8 @@ namespace WinPortProxy
 
         private static void Main(string[] args)
         {
+            args = ElevateHelper.AutoElevate(args);
+
             string remoteHost = "";
             int remotePort = 0;
             int listenPort = 0;
