@@ -43,7 +43,15 @@ namespace WinPortProxy
             try
             {
                 ExecResult result = ExecCommand("wsl", "hostname -I");
-                return result.output.Trim(new char[] { '\r', '\n', ' ' });
+                string ans = result.output.Trim(new char[] { '\r', '\n', ' ' });
+                foreach(var ip in ans.Split(' '))
+                {
+                    if (!ip.EndsWith(".1"))
+                    {
+                        return ip;
+                    }
+                }
+                return "";
             }
             catch
             {
