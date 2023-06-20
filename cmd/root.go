@@ -137,7 +137,7 @@ func entryPoint(cmd *cobra.Command, args []string) {
 }
 
 var rootCmd = &cobra.Command{
-	Use:   "win_port_proxy",
+	Use:   "win-port-proxy",
 	Short: "A small utility to add Windows port proxy rule.",
 	Run: func(cmd *cobra.Command, args []string) {
 		elevate.Run(cmd, args, entryPoint)

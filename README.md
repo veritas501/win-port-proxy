@@ -6,22 +6,22 @@
 > win-port-proxy.exe
 Error: required flag(s) "lport", "rhost", "rport" not set
 Usage:
-  win_port_proxy [flags]
-  win_port_proxy [command]
+  win-port-proxy [flags]
+  win-port-proxy [command]
 
 Available Commands:
   help        Help about any command
   version
 
 Flags:
-  -h, --help           help for win_port_proxy
+  -h, --help           help for win-port-proxy
       --lport int      listen port (required)
       --nocheck        don't check connection
       --rhost string   remote host or "wsl" for wsl host (required)
       --rport int      remote port (required)
   -u, --update         update mode, override existed rule
 
-Use "win_port_proxy [command] --help" for more information about a command.
+Use "win-port-proxy [command] --help" for more information about a command.
 ```
 
 例如将本机的22端口转发到wsl2的22端口：
