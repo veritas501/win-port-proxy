@@ -3,7 +3,7 @@
 添加windows端口转发的小工具：
 
 ```
-> win_port_proxy.exe
+> win-port-proxy.exe
 Error: required flag(s) "lport", "rhost", "rport" not set
 Usage:
   win_port_proxy [flags]
@@ -27,7 +27,7 @@ Use "win_port_proxy [command] --help" for more information about a command.
 例如将本机的22端口转发到wsl2的22端口：
 
 ```
-> win_port_proxy.exe -u --rhost wsl --rport 22 --lport 22
+> win-port-proxy.exe -u --rhost wsl --rport 22 --lport 22
 [*] resolving wsl ip ...
 [*] get wsl ip: 172.19.129.225
 [*] check tcp connection to 172.19.129.225:22 ...
