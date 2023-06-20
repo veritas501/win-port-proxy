@@ -1,4 +1,4 @@
-# WinPortProxy
+# win-port-proxy
 
 添加windows端口转发的小工具：
 
